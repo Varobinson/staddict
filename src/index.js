@@ -24,7 +24,7 @@ const theme = createMuiTheme({
           WebkitFontSmoothing: 'auto',
         },
         body: {
-          background: '#000 !important',
+          background: '#1c2126 !important',
           color: '#fff'
         }
       },

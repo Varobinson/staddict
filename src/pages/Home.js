@@ -1,8 +1,20 @@
 import React from 'react'
-import { Typography, Grid, Link, Container } from '@material-ui/core'
+import { Typography, Grid, Link, Container, makeStyles } from '@material-ui/core'
 import LeagueCard from '../components/LeagueCard'
 
+const useStyles = makeStyles({
+    link: {
+      textDecoration: 'none !important',
+      cursor: 'pointer'
+    }
+  });
+
+
+
 export default function Home() {
+
+    const classes = useStyles();
+
     return (
         <Container  >
         
@@ -19,20 +31,21 @@ export default function Home() {
             )
             }) } */}
             <Grid item lg={3} >
-                <Link >
+                <Link className={classes.link}>
                     <LeagueCard/>
                 </Link>
             </Grid>
             <Grid item lg={3} >
-                <Link >
+                <Link className={classes.link}>
                     <LeagueCard/>
                 </Link>
             </Grid>
             <Grid item lg={3} >
-                <Link >
+                <Link className={classes.link}>
                     <LeagueCard/>
                 </Link>
             </Grid>
+           
             
             
         </Grid>

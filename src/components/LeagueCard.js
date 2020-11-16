@@ -4,7 +4,7 @@ import { Card, CardContent,  makeStyles, Typography, CardMedia } from '@material
 const useStyles = makeStyles({
     root: {
       minWidth: 275,
-      backgroundColor: '#1c1b1b !important ',
+      backgroundColor: '#272c31 !important ',
       
     },
     content: {
@@ -12,8 +12,8 @@ const useStyles = makeStyles({
     },
     media: {
         height: 0,
-  paddingTop: '56.25%', // 16:9,
-  marginTop:'30'
+        paddingTop: '56.25%', // 16:9,
+        marginTop:'30'
       },
     wrapper: {
         display: 'flex',
