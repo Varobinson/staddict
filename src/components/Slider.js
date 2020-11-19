@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent,  makeStyles, Typography} from '@material-ui/core'
+import { Card, CardContent,  makeStyles, Typography, CardMedia} from '@material-ui/core'
 
 const useStyles = makeStyles({
     root: {
@@ -9,49 +9,65 @@ const useStyles = makeStyles({
     },
     content:{
         flexDirection: 'row',
-        display: 'flex'
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 134
     },
-    title: {
-      fontSize: 14,
+    media: {
+        minWidth: '40px',
+        minHeight: '40px',
+        padding: '5%' ,
+        display:'flex',
+        flexDirection:'column',
     },
-    pos: {
-      marginBottom: 12,
+    title:{
+        margin: '0px 10px',
+        
     },
+    score:{
+        
+        width: '100%'
+    },
+    logoName:{
+        display:'flex !important',
+        flexDirection:'column',
+    }
+
   });
 
-export default function Slider() {
+export default function Slider(props) {
     const classes = useStyles();
 
     return (
         
         <Card className={classes.root} >
-      <CardContent className={classes.content} >
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
+            <CardContent className={classes.content} >
+                <div className={classes.logoName}>
+                <CardMedia
+                className={classes.media}
+                image={props.homeLogo}
+                title="league"
+                />
+                <Typography className={classes.title} color="textSecondary" gutterBottom>
+                {props.homeTeam}
+                </Typography>
+                </div>
+                <Typography className={classes.score} align="center" color="Secondary" variant="h5" gutterBottom>
+                {`${props.goalsHomeTeam} - ${props.goalsHomeTeam}`}
+                </Typography>
+                <div>
+                <CardMedia
+                className={classes.media}
+                image={props.awayLogo}
+                title="league"
+                />
+                 <Typography className={classes.title} color="textSecondary" gutterBottom>
+                 {props.awayTeam}
+                </Typography>
+                </div>
+            </CardContent>
 
-    </Card>
+        </Card>
     )
 }

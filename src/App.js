@@ -7,12 +7,11 @@ import Match from './pages/Match';
 function App() {
   return (
     <Container>
-          <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/games" exact component={Games} />
-        <Route path="/games/match:id" exact component={Match} />
-        
-      </Switch>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/games/:leagueId" exact component={Games} />
+          <Route path="/games/match/:fixtureId" exact component={Match} />      
+        </Switch>
     </Container>
     
   );

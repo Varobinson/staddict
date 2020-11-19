@@ -3,8 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import { Provider } from 'react-redux';
-// import { store } from './redux/store';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import { blue, green } from '@material-ui/core/colors';
@@ -34,14 +34,14 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Provider store={store}> */}
+    <Provider store={store}>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <CssBaseline />
           <App />
         </BrowserRouter>
       </ThemeProvider>
-    {/* </Provider> */}
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

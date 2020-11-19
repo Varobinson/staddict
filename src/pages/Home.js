@@ -1,54 +1,94 @@
-import React from 'react'
-import { Typography, Grid, Link, Container, makeStyles } from '@material-ui/core'
+import React, { useEffect } from 'react'
+import { Typography, Grid, Container, makeStyles, MenuItem, FormControl, Select, InputLabel } from '@material-ui/core'
 import LeagueCard from '../components/LeagueCard'
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux'
+import { loadCountries, setCountry, populateLeagues } from '../redux/actions';
+
 
 const useStyles = makeStyles({
+    root:{
+        height: '100vh'
+        
+    },
     link: {
       textDecoration: 'none !important',
       cursor: 'pointer'
+    },
+    form:{
+        width: 200,
+        margin: '30px',
+    },
+    label:{
+        marginLeft: '65px'
     }
   });
 
 
 
 export default function Home() {
-
+    const dispatch = useDispatch()
     const classes = useStyles();
+   
+   
+    
+    const handleCountryChange = (e)=>{
+        let country = e.target.value;
+        dispatch(setCountry(country))
+        console.log(country)
+        dispatch(populateLeagues(country))
+
+    }
+
+    useEffect(()=>{
+        dispatch(loadCountries())
+        dispatch(populateLeagues('US'))
+    },[dispatch])
+    
+    const { countries, country } = useSelector((state) => state.country)
+
+    const leagues = useSelector((state) => state.leagues)
+
+    console.log(leagues)
+
 
     return (
-        <Container  >
+        <Container className={classes.root}  >
         
         <Typography variant="h1" align="center">Staddict</Typography>
+        <FormControl  className={classes.form}>
+          <InputLabel className={classes.label} id="thing" >Country</InputLabel>
+          <Select
+          labelId="thing"
+          variant="outlined"
+          value={country} onChange={handleCountryChange}>
+        {/* Map through countries */}
+            {countries.length > 1 && countries.map((country) =>{
+              return <MenuItem  value={country.code} key={country.code} >{country.country}</MenuItem>
+            })}
+          </Select>
+        </FormControl> 
         <Grid container
               direction="row"
               justify="center"
               alignItems="center" spacing={2} >
-            {/* { movies.map(movie => {
-            return (
-                <Grid item xs={3} key={movie.imdbID}>
-                <LeagueCard movie={movie} />
+            {
+                leagues.length && leagues.map((league) =>{
+                    return <Grid item lg={3} >
+                    <Link to={`/games/${league.league_id}`} className={classes.link}>
+                        <LeagueCard 
+                        name={league.name} 
+                        country={league.country.name} 
+                        season={league.season} 
+                        logo ={league.logo}
+                        />
+                    </Link>
                 </Grid>
-            )
-            }) } */}
-            <Grid item lg={3} >
-                <Link className={classes.link}>
-                    <LeagueCard/>
-                </Link>
-            </Grid>
-            <Grid item lg={3} >
-                <Link className={classes.link}>
-                    <LeagueCard/>
-                </Link>
-            </Grid>
-            <Grid item lg={3} >
-                <Link className={classes.link}>
-                    <LeagueCard/>
-                </Link>
-            </Grid>
-           
-            
-            
+                })
+            }  
         </Grid>
     </Container>
+
+   
     )
 }
