@@ -40,7 +40,8 @@ Staddict is deployed on Netlify. You can see a demo by clicking [HERE](https://s
 <br>
 
 ## :heavy_exclamation_mark: Challenges
-The most difficult part about this project was just working with a foreign api.
+* The most difficult part about this project was just working with a foreign api.
+* Having to mix setState with redux.
 <br>
 
 
