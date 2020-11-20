@@ -54,6 +54,9 @@ Staddict is deployed on Netlify. You can see a demo by clicking [HERE](https://s
 
 
 ## :busts_in_silhouette: Team
+<td <a href="https://github.com/Varobinson">
+  <img width="200" src="https://avatars3.githubusercontent.com/u/59773500?s=460&u=5e9b971c994028ab7b7af61025fa5ac4bf06b29d&v=4">
+</a>
 
 Vincent Robinson <br>
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/vincentarobinson/)
