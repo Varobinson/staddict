@@ -8,7 +8,10 @@ import { loadCountries, setCountry, populateLeagues } from '../redux/actions';
 
 const useStyles = makeStyles({
     root:{
-        height: '100vh'
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignContent: 'center',
         
     },
     link: {
@@ -18,6 +21,7 @@ const useStyles = makeStyles({
     form:{
         width: 200,
         margin: '30px',
+        alignSelf: 'center'
     },
     label:{
         marginLeft: '65px'
@@ -53,11 +57,12 @@ export default function Home() {
 
 
     return (
+        <div>
+        <Typography variant="h1" className={classes.title} align="center" >Staddict</Typography>
         <Container className={classes.root}  >
         
-        <Typography variant="h1" align="center">Staddict</Typography>
-        <FormControl  className={classes.form}>
-          <InputLabel className={classes.label} id="thing" >Country</InputLabel>
+        <FormControl  align="center" className={classes.form}>
+          <InputLabel align="center" className={classes.label} id="thing" >Country</InputLabel>
           <Select
           labelId="thing"
           variant="outlined"
@@ -88,7 +93,7 @@ export default function Home() {
             }  
         </Grid>
     </Container>
-
+    </div>
    
     )
 }

@@ -96,7 +96,7 @@ console.log(fixtures);
             <Link to={`/games/${fixtures.league_id}`} ><ArrowBackIcon style={{ color: '#3ce576', fontSize:'2rem' }} /></Link>
             <Link to='/' ><HomeIcon style={{ color: '#3ce576',fontSize:'2rem' }} /></Link>
             </div>
-            <Typography className={classes.title2} variant="h4" align="center">🇬🇧 {fixtures.league.name} ⭐️</Typography>
+            <Typography className={classes.title2} variant="h4" align="center">⚽️{fixtures.league.name} ⭐️</Typography>
             <Typography color="textSecondary" variant="h6" align="center">{fixtures.venue}</Typography>
             <div className={classes.middleSec}>
                 <div className={classes.team1} >
