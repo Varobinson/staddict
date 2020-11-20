@@ -41,7 +41,7 @@ export default function Games() {
         <>
         
         <Typography variant="h1" align="center">Staddict</Typography>
-        <Link to='/' ><HomeIcon style={{ color: '#3ce576' }} /></Link>
+        <Link to='/' ><HomeIcon style={{ color: '#3ce576', fontSize:'2rem' }} /></Link>
         <Container>
 
             

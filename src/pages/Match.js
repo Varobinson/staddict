@@ -93,8 +93,8 @@ console.log(fixtures);
         <Container className={classes.root}>            
             <Typography variant="h1" align="center">Staddict</Typography>   
             <div className={classes.btn}> 
-            <Link to={`/games/${fixtures.league_id}`} ><ArrowBackIcon style={{ color: '#3ce576' }} /></Link>
-            <Link to='/' ><HomeIcon style={{ color: '#3ce576' }} /></Link>
+            <Link to={`/games/${fixtures.league_id}`} ><ArrowBackIcon style={{ color: '#3ce576', fontSize:'2rem' }} /></Link>
+            <Link to='/' ><HomeIcon style={{ color: '#3ce576',fontSize:'2rem' }} /></Link>
             </div>
             <Typography className={classes.title2} variant="h4" align="center">🇬🇧 {fixtures.league.name} ⭐️</Typography>
             <Typography color="textSecondary" variant="h6" align="center">{fixtures.venue}</Typography>
@@ -107,7 +107,7 @@ console.log(fixtures);
                 <div className={classes.time} >
                 <Typography color="textSecondary" variant="h6" align="center">{moment(fixtures.event_date).format('LLL')}</Typography>
                 <Typography variant="h4" align="center">{fixtures.elapsed}+</Typography>
-                <Typography className={classes.score} variant="h3" align="center">{fixtures.score.fulltime}</Typography>
+                <Typography className={classes.score} variant="h3" align="center">{`${fixtures.goalsHomeTeam} - ${fixtures.goalsHomeTeam}`}</Typography>
                 </div>
                 <div className={classes.team2} >
                     <img align="center" className={classes.team2__img} src={fixtures.awayTeam.logo} alt="" />
