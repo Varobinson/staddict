@@ -3,17 +3,19 @@ import { Card, CardContent,  makeStyles, Typography, CardMedia} from '@material-
 
 const useStyles = makeStyles({
     root: {
-      Width: '100%',
+    //   Width: '100%',
       display: 'flex !important',
       backgroundColor: '#272c31 !important ',
-      minWidth:303
+      minWidth:303,
+      
     },
     content:{
         flexDirection: 'row',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        height: 134
+        height: 134,
+        justifyContent: 'space-between !important',
+        width: '100%'
     },
     media: {
         minWidth: '40px',
