@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<p align="center">
+<img  alt="Screen Shot 2020-10-02 at 9 41 04 AM" src="/public/img/STADDICT.gif"></p>
+<p align="center">
+<img src="https://img.shields.io/github/issues/Varobinson/staddict"> <img src="https://img.shields.io/github/forks/Varobinson/staddict"> <img src="https://img.shields.io/github/stars/Varobinson/staddict"> <img src="https://img.shields.io/github/license/Varobinson/staddict"></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
+<br>
 
-## Available Scripts
+## :book: About the project
+As an avid soccer fan I wanted to build an application to keep me in the Know when it comes to games, whether i'm talking to my friends about the lastest stats or i just wanted to know how my favorite team is doing.   
+<br>
+<br>
 
-In the project directory, you can run:
+## :hammer_and_wrench: Used Technologies 
+* JavaScript
+* HTML
+* CSS
+* JSX
+* Moment.js
+* Material UI
+* Styled-Components
+* API
+* NPM
+* Node.js
+* React.js
+* React-Router
+* Redux
+<br>
+<br>
 
-### `yarn start`
+## 🖥 Preview
+![Staddict](/public/img/Kapture 2020-11-20 at 11.33.01.gif)
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙ How to run 
+Staddict is deployed on Netlify. You can see a demo by clicking [HERE](https://staddict.netlify.app/).
+<br><br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :heavy_exclamation_mark: Challenges
+The most difficult part about this project was just working with a foreign api.
+<br>
+<br>
 
-### `yarn test`
+## :soon: Next Steps
+<!-- * ~~Give the user the ability to upload their own profile photo.~~:white_check_mark: -->
+* Add Other Sports.
+* Add features for live games.
+* add the ability to create custom accounts to pick your favorite teams and games you want to watch.
+<br>
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :busts_in_silhouette: Team
 
-### `yarn build`
+Vincent Robinson <br>
+[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/vincentarobinson/)
+&nbsp;
+[![GitHub](https://i.stack.imgur.com/tskMh.png) GitHub](https://github.com/Varobinson)</td>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  </tr>
+</table>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## :page_with_curl: License
+This project is under MIT license. See the [license](https://opensource.org/licenses/MIT) for more information.
+<br /> 
+<br /> 

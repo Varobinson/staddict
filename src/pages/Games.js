@@ -64,6 +64,7 @@ export default function Games() {
                     awayLogo = {league.awayTeam.logo}
                     goalsAwayTeam={league.goalsAwayTeam}
                     goalsHomeTeam={league.goalsHomeTeam}
+                    key={league.fixture_id}
                     />
                 </Link>
             </Grid>

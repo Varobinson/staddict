@@ -5,7 +5,8 @@ const useStyles = makeStyles({
     root: {
       Width: '100%',
       display: 'flex !important',
-      backgroundColor: '#272c31 !important '
+      backgroundColor: '#272c31 !important ',
+      minWidth:303
     },
     content:{
         flexDirection: 'row',

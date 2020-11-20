@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 480px) {
+    /* #root {
+        height: 100vh !important;
+        
+    } */
+    #team1 {
+        margin-left: 8% !important;
+    }
+    #team2 {
+        margin-right: 8% !important;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    #middleSec {
+        flex-direction: column !important;
+    }
+    #root {
+        padding: 0!important;
+        
+    }
+    
+  }
