@@ -29,7 +29,9 @@ As an avid soccer fan I wanted to build an application to keep me in the Know wh
 <br>
 
 ## 🖥 Preview
-![Staddict](/public/img/Kapture 2020-11-20 at 11.33.01.gif)
+<p align="center">
+<img  alt="Screen Shot 2020-10-02 at 9 41 04 AM" src="/public/img/Kapture 2020-11-20 at 11.33.01.gif"></p>
+<p align="center">
 <br>
 <br>
 
