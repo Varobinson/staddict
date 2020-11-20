@@ -53,7 +53,7 @@ export default function Home() {
 
     const leagues = useSelector((state) => state.leagues)
 
-    console.log(leagues)
+ 
 
 
     return (

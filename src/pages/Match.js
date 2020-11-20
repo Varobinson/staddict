@@ -73,7 +73,6 @@ export default function Match() {
 	}})
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             setFixtures(data.api.fixtures[0])
         })
         .catch(err => {
@@ -81,7 +80,7 @@ export default function Match() {
         });
         }, [fixtureId])
 
-console.log(fixtures);
+
 
 
   const classes = useStyles();
