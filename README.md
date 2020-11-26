@@ -7,7 +7,7 @@
 
 
 ## :book: About the project
-As an avid soccer fan I wanted to build an application to keep me in the Know when it comes to games, whether i'm talking to my friends about the lastest stats or i just wanted to know how my favorite team is doing.   
+As an avid soccer fan I wanted to build an application to keep me in the Know when it comes to games, whether i'm talking to my friends about the latest stats or just wanted to know how my favorite team is doing.   
 <br>
 
 
