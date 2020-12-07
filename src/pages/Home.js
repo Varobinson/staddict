@@ -21,10 +21,12 @@ const useStyles = makeStyles({
     form:{
         width: 200,
         margin: '30px',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        minHeight: '30px'
     },
     label:{
-        marginLeft: '65px'
+        marginLeft: '65px',
+        minHeight: '30px'
     }
   });
 
