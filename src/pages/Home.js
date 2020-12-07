@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     },
     label:{
         marginLeft: '65px',
-        minHeight: '30px'
+  
     }
   });
 
