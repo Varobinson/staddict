@@ -22,7 +22,7 @@ const useStyles = makeStyles({
         width: 200,
         margin: '30px',
         alignSelf: 'center',
-        minHeight: '30px'
+        minHeight: '70px'
     },
     label:{
         marginLeft: '65px',
